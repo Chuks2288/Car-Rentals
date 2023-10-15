@@ -46,6 +46,7 @@ export interface OptionProps {
 export interface CustomFilterProps {
     title: string;
     options: OptionProps[];
+    setFilter?: string | any;
 }
 
 export interface ShowMoreProps {
@@ -55,4 +56,9 @@ export interface ShowMoreProps {
 
 export interface HomeProps {
     searchParams: FilterProps;
+}
+
+export interface selectProps {
+    selected: string;
+    setSelected: (select: string) => void;
 }
