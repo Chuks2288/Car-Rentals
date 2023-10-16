@@ -10,10 +10,16 @@ export interface customButtonProps {
     isDisabled?: boolean;
 }
 
+// type Dispatch = any;
+type SetStateAction = any
 export interface SearchManufacturerProps {
-    manufacturer: string;
-    setManufacturer: (manufacturer: string) => void;
+    selected: string;
+    setSelected: Dispatch<SetStateAction<string>>;
 }
+// export interface SearchManufacturerProps {
+//     manufacturer: string;
+//     setManufacturer: (manufacturer: string) => void;
+// }
 export interface CarProps {
     city_mpg: number;
     class: string;
