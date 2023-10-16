@@ -1,4 +1,4 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, Dispatch, SetStateAction } from "react";
 
 export interface customButtonProps {
     title: string,
@@ -10,8 +10,7 @@ export interface customButtonProps {
     isDisabled?: boolean;
 }
 
-// type Dispatch = any;
-type SetStateAction = any
+
 export interface SearchManufacturerProps {
     selected: string;
     setSelected: Dispatch<SetStateAction<string>>;
